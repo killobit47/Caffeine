@@ -10,6 +10,8 @@ import ServiceManagement
 
 @main
 struct CaffeineApp: App {
+    @State var model = CaffeineViewModel()
+
     init() {
         do {
             try SMAppService.mainApp.register()
@@ -22,8 +24,11 @@ struct CaffeineApp: App {
         MenuBarExtra {
             ContentView()
                 .frame(width: 260)
+                .environment(\.caffeineViewModel, model)
         } label: {
-            Label("Caffeine", systemImage: "pill.fill")
+            Label("Caffeine", systemImage: model.isRuning ? "pill.fill" : "pill")
+                .animation(.snappy, value: model.isRuning)
+                .fontWeight(.black)
         }
         .menuBarExtraStyle(.window)
     }

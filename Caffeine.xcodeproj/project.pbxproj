@@ -16,7 +16,7 @@
 			path = Caffeine;
 			sourceTree = "<group>";
 		};
-		30EC2BFF2DFAEF96008A8564 /* Sounds */ = {
+		30EC2C162DFAF82D008A8564 /* Sounds */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Sounds;
 			sourceTree = "<group>";
@@ -39,7 +39,7 @@
 			children = (
 				305303BC2DF97A6B0085AC51 /* Caffeine */,
 				305303BB2DF97A6B0085AC51 /* Products */,
-				30EC2BFF2DFAEF96008A8564 /* Sounds */,
+				30EC2C162DFAF82D008A8564 /* Sounds */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,7 +68,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				305303BC2DF97A6B0085AC51 /* Caffeine */,
-				30EC2BFF2DFAEF96008A8564 /* Sounds */,
+				30EC2C162DFAF82D008A8564 /* Sounds */,
 			);
 			name = Caffeine;
 			packageProductDependencies = (
